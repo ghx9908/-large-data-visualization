@@ -32,7 +32,7 @@ const handleCalculate = () => {
   isCalculating.value = true
   // 生成一些测试数据
   const testData = Array.from({ length: 1000000 }, (_, i) => i + 1)
-  debugger
+
   // 发送数据到 Worker
   worker.postMessage({
     type: "CALCULATE",
