@@ -9,6 +9,7 @@
       <div class="nav-links">
         <router-link to="/">仪表盘</router-link>
         <router-link to="/about">关于</router-link>
+        <router-link to="/worker-demo">Web Worker 演示</router-link>
       </div>
     </nav>
 
