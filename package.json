@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "deploy": "gh-pages -d dist",
+    "build": "vite build",
     "preview": "vite preview",
     "type-check": "vue-tsc --noEmit"
   },
@@ -18,6 +19,7 @@
   "devDependencies": {
     "@types/node": "^22.15.19",
     "@vitejs/plugin-vue": "^5.2.3",
+    "gh-pages": "^6.3.0",
     "typescript": "^5.8.3",
     "vite": "^6.3.5",
     "vue-tsc": "^2.2.10"

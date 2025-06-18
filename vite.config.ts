@@ -5,6 +5,7 @@ import { resolve } from 'path'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
+  base: process.env.NODE_ENV === 'production' ? '/large-data-visualization/' : '/', // 替换 REPO_NAME 为你的仓库名
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src')
