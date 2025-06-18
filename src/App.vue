@@ -5,7 +5,7 @@
 <template>
   <div class="app">
     <nav class="navbar">
-      <div class="logo">大数据可视化优化</div>
+      <div class="logo">大数据可视化优化Demo</div>
       <div class="nav-links">
         <router-link to="/">仪表盘</router-link>
         <router-link to="/about">关于</router-link>
