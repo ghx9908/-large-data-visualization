@@ -1,0 +1,1 @@
+(function(){"use strict";const n=self;n.addEventListener("message",e=>{const{data:s,type:t}=e.data;switch(t){case"CALCULATE":const a=c(s);n.postMessage({type:"CALCULATE_COMPLETE",result:a});break}});function c(e){let s=0;for(let t=0;t<e.length;t++)s+=Math.sqrt(e[t])*Math.sin(e[t]);return s}})();
