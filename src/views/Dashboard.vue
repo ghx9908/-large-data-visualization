@@ -64,7 +64,7 @@ let fullData: DataPoint[] = []
 onMounted(() => {
   // 生成大量数据
   console.time("数据生成")
-  fullData = generateLargeDataset(100000)
+  fullData = generateLargeDataset(200000)
   originalDataCount.value = fullData.length
   console.timeEnd("数据生成")
 })
