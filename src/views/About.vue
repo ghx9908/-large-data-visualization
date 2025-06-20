@@ -6,7 +6,7 @@ const markdownContent = ref("")
 
 onMounted(async () => {
   // 动态加载 markdown 文件内容
-  const response = await fetch("/large-data-visualization.md")
+  const response = await fetch(`${import.meta.env.BASE_URL}large-data-visualization.md`)
   markdownContent.value = await response.text()
 })
 </script>
